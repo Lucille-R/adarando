@@ -1,8 +1,9 @@
 # 🥾 AdaRando
 
-Une application React affichant une liste de randonnées..
+Une application React affichant une liste de randonnées.
 
 ## 📝 Description
+*Kata réalisé dans le cadre de la formation Concepteur Développeur d'Applications à Ada Tech School.*
 
 AdaRando est une page React qui affiche 12 randonnées à partir d'un fichier de données fourni (`randonnees.json`). Le projet est volontairement simple : uniquement du front, aucune API, aucune donnée à aller chercher. L'objectif est de retravailler les réflexes de base de React :
 
@@ -94,10 +95,10 @@ Ce projet suit une organisation en branches inspirée de Git Flow :
 - `dev` : branche d'intégration des fonctionnalités
 - `feature/nom-de-la-feature` : une branche par fonctionnalité développée
 
-## 👤 Auteur
+## 👤 Auteure
 
-- **Lucille** — Étudiante chez Ada Tech School
+- **Lucille Richard** - Étudiante chez Ada Tech School
 
 ## 📄 Licence
 
-Projet réalisé dans un cadre pédagogique — Ada Tech School.
+Projet réalisé dans un cadre pédagogique - Ada Tech School.
