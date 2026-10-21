@@ -34,7 +34,7 @@ AdaRando est une page React qui affiche 12 randonnées à partir d'un fichier de
 ## 📂 Structure du projet
 
 ```
-kata-js-8-react-de-zero-adarando/
+adarando/
 ├── src/
 │   ├── components/
 │   │   ├── Entete.jsx
