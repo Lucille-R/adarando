@@ -68,11 +68,11 @@ App
 
 1. Cloner le repository :
    ```bash
-   git clone git@github.com:Lucille-R/kata-js-8-react-de-zero-adarando.git
+   git clone git@github.com:Lucille-R/adarando.git
    ```
 2. Se rendre dans le dossier du projet :
    ```bash
-   cd kata-js-8-react-de-zero-adarando
+   cd adarando
    ```
 3. Installer les dépendances :
    ```bash
