@@ -24,7 +24,7 @@ AdaRando est une page React qui affiche 12 randonnées à partir d'un fichier de
 - [x] Affichage de la région de chaque randonnée
 - [x] Composant `EtiquetteDifficulte` (affiche la difficulté)  
 - [x] BONUS : Compteur « 12 randonnées » dans l'en-tête
-- [ ] BONUS : Un style différent selon la difficulté
+- [x] BONUS : Un style différent selon la difficulté
 - [ ] BONUS : Un useState avec des boutons pour filtrer par difficulté
 
 ## 🛠️ Technologies utilisées
@@ -37,12 +37,19 @@ AdaRando est une page React qui affiche 12 randonnées à partir d'un fichier de
 
 ```
 adarando/
+├── public/
+│   ├── images/
+│   │   └── montagne.jpg
+│   └── favicon.svg
 ├── src/
 │   ├── components/
 │   │   ├── Entete.jsx
+│   │   ├── Entete.css
 │   │   ├── ListeRandos.jsx
 │   │   ├── CarteRando.jsx
-│   │   └── EtiquetteDifficulte.jsx
+│   │   ├── CarteRando.css
+│   │   ├── EtiquetteDifficulte.jsx
+│   │   └── EtiquetteDifficulte.css
 │   ├── randonnees.json
 │   ├── App.jsx
 │   ├── App.css
