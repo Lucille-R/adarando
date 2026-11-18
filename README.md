@@ -12,13 +12,16 @@ AdaRando est une page React qui affiche 12 randonnées à partir d'un fichier de
 - Affichage d'une liste avec `.map()`
 - Affichage conditionnel
 
+> ℹ️ Les données de `randonnees.json` sont fictives : elles sont fournies pour les besoins du kata.
+
 ## ✨ Fonctionnalités à mettre en place
 
 - [x] Composant `Entete` (titre + phrase de présentation)
-- [x] Composant `CarteRando` (nom, difficulté, durée, dénivelé d'une randonnée)
+- [x] Composant `CarteRando` (nom, région, difficulté, durée, dénivelé d'une randonnée)
 - [x] Composant `ListeRandos` (affiche une `CarteRando` par randonnée)
 - [x] Affichage des 12 randonnées
 - [x] Mention "Balisée" affichée uniquement si la randonnée est balisée
+- [x] Affichage de la région de chaque randonnée
 - [x] Composant `EtiquetteDifficulte` (affiche la difficulté)  
 - [x] BONUS : Compteur « 12 randonnées » dans l'en-tête
 - [ ] BONUS : Un style différent selon la difficulté
@@ -85,7 +88,7 @@ App
 
 ## 💻 Utilisation
 
-Ouvrir l'URL affichée dans le terminal (en général `http://localhost:5173`) pour voir la liste des 12 randonnées, avec leur nom, leur difficulté, leur durée, leur dénivelé, et la mention "Balisée" quand elle s'applique.
+Ouvrir l'URL affichée dans le terminal (en général `http://localhost:5173`) pour voir la liste des 12 randonnées, avec leur nom, leur région, leur difficulté, leur durée, leur dénivelé, et la mention "Balisée" quand elle s'applique.
 
 ## 🌳 Workflow Git
 
