@@ -1,3 +1,4 @@
+import './CarteRando.css';
 import EtiquetteDifficulte from "./EtiquetteDifficulte";
 
 const CarteRando = (props) => {
