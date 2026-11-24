@@ -2,12 +2,22 @@ import './App.css';
 import Entete from './components/Entete';
 import ListeRandos from './components/ListeRandos';
 import randonnees from './randonnees.json';
+import BoutonFiltres from './components/BoutonFiltres';
+import { useState } from 'react';
 
 const App = () => {
+
+  const [filtreDifficulte, setFiltreDifficulte] = useState(null);
+
+  const randonneesFiltrees = randonnees.filter((randonnee) => {
+    return filtreDifficulte === null || filtreDifficulte === randonnee.difficulte;
+  });
+
   return (
     <>
       <Entete nbRandonnees={randonnees.length} />
-      <ListeRandos tableauRandonnees={randonnees} />
+      <BoutonFiltres changerFiltre={setFiltreDifficulte} />
+      <ListeRandos tableauRandonnees={randonneesFiltrees} />
     </>
   );
 };
