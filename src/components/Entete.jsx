@@ -5,7 +5,7 @@ const Entete = (props) => {
 		<div className="entete">
 			<h1>AdaRando</h1>
 			<p>Le guide de vos randos !</p>
-			<span className="nb-randos">Actuellement : {props.nbRandonnees} randonnées sur notre guide</span>
+			<span className="nb-randos">Randonnées trouvées : {props.nbRandonnees}</span>
 		</div>
 	);
 };

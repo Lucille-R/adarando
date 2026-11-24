@@ -1,6 +1,8 @@
+import './EtiquetteDifficulte.css';
+
 const EtiquetteDifficulte = (props) => {
 	return (
-		<span className="difficulte">{props.difficulte}</span>
+		<span className={`difficulte difficulte-${props.difficulte}`}>{props.difficulte}</span>
 	);
 };
 
