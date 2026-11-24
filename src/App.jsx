@@ -16,7 +16,10 @@ const App = () => {
   return (
     <>
       <Entete nbRandonnees={randonneesFiltrees.length} />
-      <BoutonFiltres changerFiltre={setFiltreDifficulte} />
+      <BoutonFiltres
+        changerFiltre={setFiltreDifficulte}
+        filtreActif={filtreDifficulte}
+      />
       <ListeRandos tableauRandonnees={randonneesFiltrees} />
     </>
   );

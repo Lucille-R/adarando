@@ -18,3 +18,8 @@
 .boutons button:hover {
 	background-color: #cfc4b6;
 }
+
+.boutons button.actif {
+	background-color: #57534e;
+	color: #fbe8d5;
+}
