@@ -1,0 +1,20 @@
+.boutons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 16px;
+	padding: 20px;
+}
+
+.boutons button {
+	background-color: #fbe8d5;
+	color: #57534e;
+	border: 1px solid #57534e;
+	border-radius: 6px;
+	padding: 6px 12px;
+	font-weight: bold;
+}
+
+.boutons button:hover {
+	background-color: #cfc4b6;
+}
