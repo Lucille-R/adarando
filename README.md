@@ -2,6 +2,8 @@
 
 Une application React affichant une liste de randonnées.
 
+🌐 **Site en ligne** : https://lucille-r.github.io/adarando/
+
 ## 🤖 Améliorations avec Claude Code
 
 ![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?logo=claude&logoColor=white)
@@ -55,6 +57,9 @@ AdaRando est une page React qui affiche 12 randonnées à partir d'un fichier de
 
 ```
 adarando/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
 ├── public/
 │   ├── images/
 │   │   └── montagne.jpg
@@ -78,6 +83,7 @@ adarando/
 ├── CLAUDE.md
 ├── index.html
 ├── package.json
+├── vite.config.js
 ├── notes.md
 └── README.md
 ```
@@ -120,7 +126,7 @@ App
 
 ## 💻 Utilisation
 
-Ouvrir l'URL affichée dans le terminal (en général `http://localhost:5173`) pour voir la liste des 12 randonnées, avec leur nom, leur région, leur difficulté, leur durée, leur dénivelé, et la mention "Balisée" quand elle s'applique.
+Ouvrir l'URL affichée dans le terminal (en général `http://localhost:5173/adarando/`) pour voir la liste des 12 randonnées, avec leur nom, leur région, leur difficulté, leur durée, leur dénivelé, et la mention "Balisée" quand elle s'applique.
 
 Les boutons sous l'en-tête permettent de n'afficher que les randonnées faciles, moyennes ou difficiles. Le bouton « Aucun filtre » les réaffiche toutes. Le compteur de l'en-tête indique le nombre de randonnées affichées.
 
