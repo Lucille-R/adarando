@@ -25,7 +25,7 @@ AdaRando est une page React qui affiche 12 randonnées à partir d'un fichier de
 - [x] Composant `EtiquetteDifficulte` (affiche la difficulté)  
 - [x] BONUS : Compteur « 12 randonnées » dans l'en-tête
 - [x] BONUS : Un style différent selon la difficulté
-- [ ] BONUS : Un useState avec des boutons pour filtrer par difficulté
+- [x] BONUS : Un useState avec des boutons pour filtrer par difficulté
 
 ## 🛠️ Technologies utilisées
 
@@ -43,6 +43,8 @@ adarando/
 │   └── favicon.svg
 ├── src/
 │   ├── components/
+│   │   ├── BoutonFiltres.jsx
+│   │   ├── BoutonFiltres.css
 │   │   ├── Entete.jsx
 │   │   ├── Entete.css
 │   │   ├── ListeRandos.jsx
@@ -67,12 +69,17 @@ adarando/
 ```
 App
 ├── Entete
+├── BoutonFiltres
 └── ListeRandos
     └── CarteRando
         └── EtiquetteDifficulte
 ```
 
-`ListeRandos` reçoit le tableau complet des randonnées et affiche une `CarteRando` par randonnée. Chaque `CarteRando` reçoit une seule randonnée et affiche sa propre `EtiquetteDifficulte`.
+`App` garde en mémoire la difficulté choisie (un `useState` qui vaut `null` quand aucun filtre n'est actif) et calcule le tableau des randonnées filtrées.
+
+`BoutonFiltres` reçoit deux props : `changerFiltre`, la fonction appelée au clic pour changer la difficulté choisie, et `filtreActif`, la difficulté choisie, pour mettre en évidence le bouton actif.
+
+`ListeRandos` reçoit le tableau des randonnées filtrées et affiche une `CarteRando` par randonnée. Chaque `CarteRando` reçoit une seule randonnée et affiche sa propre `EtiquetteDifficulte`.
 
 ## 🚀 Installation
 
@@ -96,6 +103,8 @@ App
 ## 💻 Utilisation
 
 Ouvrir l'URL affichée dans le terminal (en général `http://localhost:5173`) pour voir la liste des 12 randonnées, avec leur nom, leur région, leur difficulté, leur durée, leur dénivelé, et la mention "Balisée" quand elle s'applique.
+
+Les boutons sous l'en-tête permettent de n'afficher que les randonnées faciles, moyennes ou difficiles. Le bouton « Aucun filtre » les réaffiche toutes. Le compteur de l'en-tête indique le nombre de randonnées affichées.
 
 ## 🌳 Workflow Git
 
