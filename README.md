@@ -2,6 +2,23 @@
 
 Une application React affichant une liste de randonnées..
 
+## 🤖 Améliorations avec Claude Code
+
+![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?logo=claude&logoColor=white)
+
+**Projet d'origine** : un kata React d'Ada Tech School, que j'ai codé seule.
+
+**Mode Plan, code écrit par Claude Code**
+- ajout du `CLAUDE.md` (contexte, conventions de code, règles de travail) ;
+- nettoyage : langue de la page (`lang="fr"`), titre de l'onglet, favicon, nom du projet, CSS inutilisé.
+- affichage de la région sur les cartes ;
+- style des étiquettes selon la difficulté, fond clair et centrage des cartes.
+
+**Mode Plan et style de réponse `Learning`, code écrit par moi**
+- bonus filtre par difficulté (`useState`), avec Claude Code comme tuteur : indices, sans solution.
+
+**Mon rôle** : choix des améliorations, rédaction du `CLAUDE.md`, validation de chaque plan, relecture de chaque modification et de chaque commande avant de l'accepter.
+
 ## 📝 Description
 
 AdaRando est une page React qui affiche 12 randonnées à partir d'un fichier de données fourni (`randonnees.json`). Le projet est volontairement simple : uniquement du front, aucune API, aucune donnée à aller chercher. L'objectif est de retravailler les réflexes de base de React :
@@ -21,11 +38,11 @@ AdaRando est une page React qui affiche 12 randonnées à partir d'un fichier de
 - [x] Composant `ListeRandos` (affiche une `CarteRando` par randonnée)
 - [x] Affichage des 12 randonnées
 - [x] Mention "Balisée" affichée uniquement si la randonnée est balisée
-- [x] Affichage de la région de chaque randonnée
+- [x] Affichage de la région de chaque randonnée *(avec Claude Code en Mode Plan)*
 - [x] Composant `EtiquetteDifficulte` (affiche la difficulté)  
-- [x] BONUS : Compteur « 12 randonnées » dans l'en-tête
-- [x] BONUS : Un style différent selon la difficulté
-- [x] BONUS : Un useState avec des boutons pour filtrer par difficulté
+- [x] BONUS : Compteur du nombre de randonnées affichées dans l'en-tête
+- [x] BONUS : Un style différent selon la difficulté *(avec Claude Code en Mode Plan)*
+- [x] BONUS : Un useState avec des boutons pour filtrer par difficulté *(codé seule, Claude Code en tuteur - Mode Plan + style de réponses 'Learning')*
 
 ## 🛠️ Technologies utilisées
 
