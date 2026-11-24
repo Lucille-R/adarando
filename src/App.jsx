@@ -15,7 +15,7 @@ const App = () => {
 
   return (
     <>
-      <Entete nbRandonnees={randonnees.length} />
+      <Entete nbRandonnees={randonneesFiltrees.length} />
       <BoutonFiltres changerFiltre={setFiltreDifficulte} />
       <ListeRandos tableauRandonnees={randonneesFiltrees} />
     </>
